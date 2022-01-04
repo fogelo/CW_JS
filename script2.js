@@ -45,6 +45,3 @@ function capitalize(str) {
 */
 
 
-
-
-

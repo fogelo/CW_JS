@@ -31,3 +31,22 @@ function calculator(number) {
 
 calculator(752)
 */
+
+//? 2) Написать функцию, которая будет форматировать введеный номер так как написано ниже
+// createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // => returns "(123) 456-7890"
+
+/*
+function createPhoneNumber(numbers) {
+
+    let strings = numbers.map((item, index, arr) => {
+        return item + ''
+    })
+    let number = '(' + strings[0] + strings[1] + strings[2] + ')' + ' '
+    + strings[3] + strings[4] + strings[5] + '-' + strings[6] + strings[7] + strings[8] + strings[9]
+    return number
+
+}
+let number = createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
+
+console.log(number)
+ */
