@@ -231,7 +231,7 @@ function makeUpperCase(str) {
 */
 
 /*
-?7. Rock Paper Scissors!
+?8. Rock Paper Scissors!
 !8 kyu
 */
 
@@ -267,3 +267,19 @@ const rps = (p1, p2) => {
     }
 };
 */
+
+/*
+?9. Thinkful - Logic Drills: Traffic light
+!8 kyu
+*/
+
+function updateLight(current) {
+    switch (current) {
+        case 'green':
+            return 'yellow'
+        case 'yellow':
+            return 'red'
+        case 'red':
+            return 'green'
+    }
+}
