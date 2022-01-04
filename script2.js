@@ -273,6 +273,7 @@ const rps = (p1, p2) => {
 !8 kyu
 */
 
+/*
 function updateLight(current) {
     switch (current) {
         case 'green':
@@ -283,3 +284,14 @@ function updateLight(current) {
             return 'green'
     }
 }
+*/
+
+/*
+?10. Grasshopper - Check for factor
+!8 kyu
+*/
+
+function checkForFactor(base, factor) {
+    return base % factor === 0 ? true : false
+}
+
