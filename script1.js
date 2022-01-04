@@ -50,3 +50,32 @@ let number = createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
 
 console.log(number)
  */
+
+//? 3) Написать функцию, которая будет принимать строку и выводить строку из чисел соостветсвющих порядковому номеру в алфавите каждой букве
+
+/*
+let letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+function alphabetPosition(text) {
+    text = text.toLowerCase()
+    textLetters = text.split('')
+    console.log(textLetters)
+    let numbers = []
+    textLetters.forEach(item => {
+        numbers.push(letters.indexOf(item, 0) + 1)
+    });
+    numbers = numbers.filter((item, index, array) => {
+        return item > 0
+    })
+    console.log(numbers)
+    numbers = numbers.map((item) => {
+        return item + ''
+    })
+    numbers = numbers.join(' ')
+    console.log(numbers, typeof numbers)
+    text=numbers
+    console.log(text)
+    return text;
+}
+alphabetPosition("The sunset sets at twelve o' clock.")
+*/
