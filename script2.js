@@ -1,6 +1,6 @@
 /*§CW_JS*/
 
-/*!1. написать функцию, которая из строки будет делать hashtag*/
+/*?1. написать функцию, которая из строки будет делать hashtag*/
 
 /*
 " Hello there thanks for trying my Kata"  =>  "#HelloThereThanksForTryingMyKata"
@@ -43,5 +43,8 @@ function capitalize(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 */
+
+
+
 
 
