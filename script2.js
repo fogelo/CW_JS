@@ -202,6 +202,18 @@ function well(x) {
 !8 kyu
 */
 
+/*
 function sixToast(num) {
     return Math.abs(num-6)
+}
+*/
+
+
+/*
+?6. Sentence Smash
+!8 kyu
+*/
+
+function smash (words) {
+    return words.join(" ")
 }
