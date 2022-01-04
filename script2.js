@@ -141,14 +141,26 @@ function formatDuration (seconds) {
     return resultStr ;
 }
 */
+/*
+//@best practices
+function formatDuration (seconds) {
+    var time = { year: 31536000, day: 86400, hour: 3600, minute: 60, second: 1 },
+        res = [];
 
+    if (seconds === 0) return 'now';
+
+    for (var key in time) {
+        if (seconds >= time[key]) {
+            var val = Math.floor(seconds/time[key]);
+            res.push(val += val > 1 ? ' ' + key + 's' : ' ' + key);
+            seconds = seconds % time[key];
+        }
+    }
+
+    return res.length > 1 ? res.join(', ').replace(/,([^,]*)$/,' and'+'$1') : res[0]
+}
+*/
 formatDuration(1)
-// formatDuration(86401)
-
-
-// Expected: '4 years, 68 days, 3 hours and 4 minutes', instead got: '4 years, 68 days, 3 hours,  and 4 minutes'
-
-// console.log(4*31536000+68*86400+3*3600+4*60)
 
 
 
