@@ -184,7 +184,7 @@ dutyFree(12, 50, 1000)
 !8 kyu
 */
 
-
+/*
 function well(x) {
     let goodIdeas = x.filter((item) => item === 'good')
     if (goodIdeas.length === 1 || goodIdeas.length === 2) {
@@ -195,4 +195,13 @@ function well(x) {
         return 'Fail!'
     }
 }
+*/
 
+/*
+?5. BASIC: Making Six Toast.
+!8 kyu
+*/
+
+function sixToast(num) {
+    return Math.abs(num-6)
+}
