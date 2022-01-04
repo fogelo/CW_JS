@@ -79,3 +79,51 @@ function alphabetPosition(text) {
 }
 alphabetPosition("The sunset sets at twelve o' clock.")
 */
+
+
+//? 4) Написать функцию, которая будет декодировать сигнал Морзе на английский язык
+// decodeMorse('.... . -.--   .--- ..- -.. .')
+/*
+let alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
+    'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
+    's', 't', 'u', 'v', 'w', 'x', 'y', 'z','sos','!','.']
+let morseAlphabet = ['.-', '-...', '-.-.', '-..', '.', '..-.', '--.', '....', '..',
+    '.---', '-.-', '.-..', '--', '-.', '---', '.--.', '--.-', '.-.',
+    '...', '-', '..-', '...-', '.--', '-..-', '-.--', '--..','...---...','--..--','......']
+     */
+decodeMorse = function (morseCode) {
+
+    let numbers = []
+    let sentence = []
+    let arr = []
+    arr = morseCode.split(' ')
+
+
+    arr.forEach((item, index, arr) => {
+        numbers.push(morseAlphabet.indexOf(item, 0) + 1)
+    })
+    if (numbers.length === 1) {
+        console.log(alphabet[numbers[0] - 1].toUpperCase())
+        return alphabet[numbers[0] - 1].toUpperCase().trim()
+    } else {
+        numbers.forEach((item, index, arr) => {
+            if (item - 1 > 0) {
+                sentence.push(alphabet[item - 1])
+
+            } else {
+                sentence.push(' ')
+            }
+        })
+        sentence = sentence.join(' ')
+        sentence = sentence.split('     ')
+        sentence = sentence.map((item, index, arr) => {
+            return item = item.split(' ').join('')
+        })
+        sentence = sentence.join(' ')
+        //your code here
+        sentence = sentence.toUpperCase()
+        console.log(sentence)
+        return sentence.trim()
+    }
+}
+decodeMorse('...---... --..-- ......')
