@@ -161,12 +161,38 @@ function formatDuration (seconds) {
 }
 */
 // formatDuration(1)
+/*
 
-/*?3. Holiday VIII - Duty Free*/
 
+
+/*
+?3. Holiday VIII - Duty Free
+!8 kyu
+*/
+
+/*
 function dutyFree(normPrice, discount, hol) {
     return Math.floor(hol / (normPrice * discount / 100))
 }
 
 dutyFree(12, 50, 1000)
+*/
+
+
+/*
+?4. Well of Ideas - Easy Version
+!8 kyu
+*/
+
+
+function well(x) {
+    let goodIdeas = x.filter((item) => item === 'good')
+    if (goodIdeas.length === 1 || goodIdeas.length === 2) {
+        return 'Publish!'
+    } else if (goodIdeas.length > 2) {
+        return 'I smell a series!'
+    } else {
+        return 'Fail!'
+    }
+}
 
