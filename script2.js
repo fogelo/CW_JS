@@ -214,6 +214,17 @@ function sixToast(num) {
 !8 kyu
 */
 
+/*
 function smash (words) {
     return words.join(" ")
+}
+*/
+
+/*
+?7. MakeUpperCase
+!8 kyu
+*/
+
+function makeUpperCase(str) {
+    return str.toUpperCase()
 }
