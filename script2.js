@@ -44,7 +44,7 @@ function capitalize(str) {
 }
 */
 
-/*?2. */
+/*?2. formatDuration*/
 
 /*
 formatDuration(62)    // returns "1 minute and 2 seconds"
@@ -160,8 +160,13 @@ function formatDuration (seconds) {
     return res.length > 1 ? res.join(', ').replace(/,([^,]*)$/,' and'+'$1') : res[0]
 }
 */
-formatDuration(1)
+// formatDuration(1)
 
+/*?3. Holiday VIII - Duty Free*/
 
+function dutyFree(normPrice, discount, hol) {
+    return Math.floor(hol / (normPrice * discount / 100))
+}
 
+dutyFree(12, 50, 1000)
 
