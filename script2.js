@@ -302,6 +302,7 @@ function checkForFactor(base, factor) {
 !8 kyu
 */
 
+/*
 const quarterOf = (month) => {
     switch(month){
         case 1:
@@ -322,3 +323,22 @@ const quarterOf = (month) => {
             return 4
     }
 }
+*/
+
+/*
+?12. Grasshopper - Grade book
+!8 kyu
+*/
+
+
+function getGrade(s1, s2, s3) {
+
+    let score = (s1 + s2 + s3) / 3
+
+    return 90 <= score && score <= 100 ? 'A'
+        : 80 <= score && score < 90 ? 'B'
+            : 70 <= score && score < 80 ? 'C'
+                : 60 <= score && score < 70 ? 'D'
+                    : 0 <= score && score < 60 ? 'F' : ""
+}
+
