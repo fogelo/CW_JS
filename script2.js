@@ -331,6 +331,7 @@ const quarterOf = (month) => {
 */
 
 
+/*
 function getGrade(s1, s2, s3) {
 
     let score = (s1 + s2 + s3) / 3
@@ -340,5 +341,20 @@ function getGrade(s1, s2, s3) {
             : 70 <= score && score < 80 ? 'C'
                 : 60 <= score && score < 70 ? 'D'
                     : 0 <= score && score < 60 ? 'F' : ""
+}
+*/
+
+
+/*
+?13. Will there be enough space?
+!8 kyu
+*/
+
+function enough(cap, on, wait) {
+    if((cap - on - wait) >= 0) {
+        return 0
+    } else if (cap - on - wait > 0) {
+        return Math.abs(cap - on - wait)
+    }
 }
 
