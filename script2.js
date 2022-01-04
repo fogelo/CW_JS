@@ -224,7 +224,46 @@ function smash (words) {
 ?7. MakeUpperCase
 !8 kyu
 */
-
+/*
 function makeUpperCase(str) {
     return str.toUpperCase()
 }
+*/
+
+/*
+?7. Rock Paper Scissors!
+!8 kyu
+*/
+
+/*
+//@мое решение
+const rps = (p1, p2) => {
+    if (p1 === p2) {
+        return 'Draw!'
+    } else if (p1 === 'scissors' && p2 === 'paper') {
+        return 'Player 1 won!'
+    } else if (p1 === 'paper' && p2 === 'scissors') {
+        return 'Player 2 won!'
+    } else if (p1 === 'scissors' && p2 === 'rock') {
+        return 'Player 2 won!'
+    } else if (p1 === 'rock' && p2 === 'scissors') {
+        return 'Player 1 won!'
+    } else if (p1 === 'rock' && p2 === 'paper') {
+        return 'Player 2 won!'
+    } else if (p1 === 'paper' && p2 === 'rock') {
+        return 'Player 1 won!'
+    }
+};
+
+//@best practices
+const rps = (p1, p2) => {
+    if (p1 === p2) return "Draw!";
+    var rules = {rock: "scissors", paper: "rock", scissors: "paper"};
+    if (p2 === rules[p1]) {
+        return "Player 1 won!";
+    }
+    else {
+        return "Player 2 won!";
+    }
+};
+*/
